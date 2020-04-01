@@ -1,10 +1,11 @@
 const assertEqual = function (actual, expected) {
 
   if (actual === expected) {
-    console.log(`U+1F64C Asssertion Passed: ${actual} === ${expected}`);
+    console.log(`😉 Asssertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`U+1F612 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`😱 Assertion Failed: ${actual} !== ${expected}`);
   }
+
 };
 const tail = function (array) {
   return array.slice(1);
