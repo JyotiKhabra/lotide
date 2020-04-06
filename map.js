@@ -2,9 +2,9 @@ const eqArrays = require('./eqArrays.js')
 const assertArraysEqual = require('./assertArraysEqual.js')
 
 
-const words = ["ground", "control", "to", "major", "tom"];
-const nums = [55, 77, 89,];
-const nums2 = [1, 2, 3]
+// const words = ["ground", "control", "to", "major", "tom"];
+// const nums = [55, 77, 89,];
+// const nums2 = [1, 2, 3]
 const map = function (array, callback) {
 
   const results = []
@@ -13,6 +13,8 @@ const map = function (array, callback) {
   }
   return results;
 }
+module.exports = map
+
 //const results1 = map(words, word => word[0]);
 // console.log(results1); 
 //tests

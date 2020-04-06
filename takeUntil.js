@@ -1,26 +1,5 @@
-const eqArrays = function (actual, expected) {
-
-  if (!Array.isArray(actual) || !Array.isArray(expected)) {
-    return false;
-  }
-
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`😉 Asssertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`😱 Assertion Failed: ${actual} !== ${expected}`);
-  }
-}
+const eqArrays = require('./eqArrays.js')
+const assertArraysEqual = require('./assertArraysEqual.js')
 
 const takeUntil = function (array, callback) {
   for (let i = 0; i < array.length; i++) {
@@ -32,6 +11,7 @@ const takeUntil = function (array, callback) {
 
   return undefined
 }
+module.exports = takeUntil
 
 //test 
 // const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
